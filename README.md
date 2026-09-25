@@ -22,6 +22,8 @@ questions and promotion criteria before implementation work begins.
 | [Tailscale Android DNS Regression Lab](ideas/tailscale-android-dns-regression-lab/README.md) | Concept / investigation | Reproducible Android/Tailscale DNS and routing diagnostics. |
 | [GeForce NOW Packet-Loss Correlation Lab](ideas/gfn-packet-loss-correlation-lab/README.md) | Concept / diagnostic lab | Synchronized client/router captures to localize intermittent real-time loss. |
 
+| [LAN / Wi-Fi Performance & Latency Benchmark Lab](ideas/lan-wifi-performance-latency-benchmark/README.md) | Concept / benchmark lab | Controlled iperf3 Ethernet vs Wi-Fi 6 throughput, jitter, loss and latency-under-load testing. |
+
 See [BACKLOG.md](BACKLOG.md) for additional ideas that have not yet been expanded.
 
 ## Workflow
