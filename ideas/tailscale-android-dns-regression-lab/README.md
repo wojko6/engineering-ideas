@@ -47,3 +47,34 @@ known starting state
 
 Promote when one previously observed DNS failure can be reproduced and isolated
 with a bounded A/B test.
+
+
+## High-value mobile extension — transport handover and resume
+
+Use a real Android device to measure how Tailscale, routing and DNS recover
+when the phone changes access networks without changing the application state.
+
+Test transitions:
+
+```text
+Wi-Fi -> LTE/5G
+LTE/5G -> Wi-Fi
+Wi-Fi -> USB-C Ethernet
+USB-C Ethernet -> Wi-Fi
+```
+
+Also include a sleep/resume variant with the screen off for controlled
+intervals before rechecking connectivity.
+
+Record:
+
+- time until the Tailscale peer/path is usable again;
+- time until DNS resolution succeeds again;
+- whether the intended exit node or subnet route is restored;
+- packet loss and latency during the transition;
+- whether Private DNS or resolver selection changes unexpectedly;
+- whether manual intervention is required.
+
+Keep each transition as a bounded A/B sequence with the same phone, Tailscale
+configuration and target services. This can become a separate case study if
+the behavior is repeatable and produces meaningful recovery evidence.
