@@ -18,6 +18,7 @@ projects.
 - [Reproducible KDE Wayland Session](ideas/reproducible-kde-wayland-session/README.md)
 - [Tailscale Android DNS Regression Lab](ideas/tailscale-android-dns-regression-lab/README.md)
 - [GeForce NOW Packet-Loss Correlation Lab](ideas/gfn-packet-loss-correlation-lab/README.md)
+- [Home Lab Attack Surface & Vulnerability Assessment](ideas/home-lab-attack-surface-vulnerability-assessment/README.md)
 
 ## Additional remembered ideas not yet expanded
 
