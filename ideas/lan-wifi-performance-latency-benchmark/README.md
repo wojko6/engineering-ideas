@@ -35,6 +35,17 @@ The lab should measure:
 
 The preferred server is a separate computer connected by Gigabit Ethernet.
 
+The current reference client is the Lenovo Legion 5 15ACH6H running Fedora
+with a Realtek RTL8852AE adapter and the `rtw89_8852ae` driver. The live
+capability report advertises Wi-Fi 6 on 5 GHz with `HE40/HE80/5GHz`, 2 spatial
+streams for HE RX/TX up to 80 MHz, and explicitly reports `neither 160 nor
+80+80` for VHT channel width. Therefore the current Legion baseline is
+**80 MHz**, not 160 MHz.
+
+A future 160 MHz comparison is valid only with a different client/adapter and
+driver state that actually advertises HE 160 MHz. It must be recorded as a
+separate client capability rather than assumed from the router specification.
+
 Do not use the ASUS router itself as the primary iperf3 server for the main
 comparison. Doing so could turn the test into a router-CPU benchmark rather
 than a clean LAN/Wi-Fi transport benchmark.
@@ -157,13 +168,26 @@ This helps distinguish:
 
 ## Initial acceptance goal
 
-The first useful case study should produce a controlled comparison for:
+The first useful case study should produce a controlled comparison on the
+current Legion reference client for:
 
 ```text
 Gigabit Ethernet
 vs
 5 GHz Wi-Fi 6 / 80 MHz
 ```
+
+The current Fedora/RTL8852AE capability check is part of the test preflight:
+
+```text
+VHT: neither 160 nor 80+80
+HE:  HE40/HE80/5GHz
+HE RX/TX MCS/NSS: up to 2 streams <= 80 MHz
+```
+
+So **160 MHz is not part of the current-client acceptance matrix**. If a later
+client advertises HE 160 MHz, add a separate `Wi-Fi 6 / 160 MHz` branch to the
+matrix and keep the hardware/driver identity in the evidence.
 
 with at least:
 
