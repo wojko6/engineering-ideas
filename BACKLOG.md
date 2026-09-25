@@ -5,6 +5,8 @@ projects.
 
 ## Expanded concepts
 
+- [LAN / Wi-Fi Performance & Latency Benchmark Lab](ideas/lan-wifi-performance-latency-benchmark/README.md)
+
 - [Universal Tabs for GNOME](ideas/gnome-universal-tabs/README.md)
 - [Fedora Localization Audit & Repair Engine](ideas/fedora-localization-audit-repair-engine/README.md)
 - [Fedora Upgrade Readiness Engine](ideas/fedora-upgrade-readiness-engine/README.md)
