@@ -36,3 +36,20 @@ Some router ideas already have detailed design material in the active ASUS
 project roadmap. They are listed here only as remembered concepts so this
 incubator can serve as a single idea index without duplicating operational
 source-of-truth documentation.
+
+
+## Selected mobile test extensions
+
+Three high-value phone-based extensions are now retained in the expanded ideas:
+
+1. **Android transport handover and Tailscale recovery** — Wi-Fi, LTE/5G and
+   USB-C Ethernet transitions plus sleep/resume recovery; see
+   `ideas/tailscale-android-dns-regression-lab/README.md`.
+2. **Android DNS enforcement / resolver-bypass matrix** — verify actual resolver
+   paths across Wi-Fi, Ethernet, LTE/5G and Tailscale, including controlled
+   Private DNS / encrypted-DNS cases; see
+   `ideas/privacy-telemetry-audit/README.md`.
+3. **Controlled Android telemetry correlation** — correlate idle, reboot,
+   selected-app and WebView/Custom Tab scenarios with DNS/network evidence,
+   optionally across multiple access paths; see
+   `ideas/privacy-telemetry-audit/README.md`.
