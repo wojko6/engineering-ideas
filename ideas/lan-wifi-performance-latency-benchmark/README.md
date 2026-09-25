@@ -46,6 +46,39 @@ A future 160 MHz comparison is valid only with a different client/adapter and
 driver state that actually advertises HE 160 MHz. It must be recorded as a
 separate client capability rather than assumed from the router specification.
 
+
+### Additional mobile-client experiment — POCO F8 Pro
+
+Use the POCO F8 Pro as an additional same-device transport comparison if its
+live association confirms the required Wi-Fi channel width.
+
+Planned paths:
+
+```text
+POCO F8 Pro -> USB-C Ethernet adapter -> ASUS/LAN
+POCO F8 Pro -> 5 GHz Wi-Fi -> 80 MHz
+POCO F8 Pro -> 5 GHz Wi-Fi -> 160 MHz (only after live verification)
+```
+
+Purpose:
+
+- obtain a wired reference path for the phone without changing the endpoint;
+- compare LAN latency, jitter and packet loss between wired and wireless access;
+- run local `iperf3` TCP/UDP tests against the same wired server;
+- measure latency under load;
+- optionally repeat DNS/Tailscale and latency-sensitive application checks on
+  the same phone across the different access paths.
+
+The Ethernet path is a latency/stability reference, not automatically a
+throughput ceiling for the Wi-Fi test. Record the negotiated USB/Ethernet link
+and measured throughput rather than assuming Gigabit performance from the
+adapter specification.
+
+Before accepting a 160 MHz phone result, confirm the actual live association
+from the AP/client telemetry. Hardware or marketing support alone is not
+sufficient evidence. Keep the 80 MHz and 160 MHz results separate if channel,
+client state or other test conditions differ.
+
 Do not use the ASUS router itself as the primary iperf3 server for the main
 comparison. Doing so could turn the test into a router-CPU benchmark rather
 than a clean LAN/Wi-Fi transport benchmark.
