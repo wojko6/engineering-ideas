@@ -8,6 +8,26 @@ Create a reproducible Android lab for diagnosing Tailscale DNS failures and
 route/DNS interactions instead of treating each phone issue as an isolated
 incident.
 
+## Scope ownership
+
+This lab owns **Tailscale-specific recovery and regression behavior**:
+
+- DNS failures while Tailscale is active;
+- subnet-route / exit-node recovery;
+- transport handover and resume;
+- time to recover tunnel, routes and DNS;
+- whether manual intervention is required.
+
+Generic DNS enforcement / resolver-bypass testing across Android transports
+belongs in
+[Privacy & Telemetry Audit](../privacy-telemetry-audit/README.md).
+
+Raw Wi-Fi throughput and 80/160 MHz transport benchmarking belongs in
+[LAN / Wi-Fi Performance & Latency Benchmark Lab](../lan-wifi-performance-latency-benchmark/README.md).
+
+Reuse those transport states when useful, but keep the outcome here focused on
+Tailscale recovery rather than duplicating the network benchmark.
+
 ## Candidate scope
 
 - stock/stable vs beta/custom Tailscale client;
