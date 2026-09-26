@@ -29,6 +29,29 @@ An idea should normally contain:
 
 Avoid turning a concept document into an unbounded feature list.
 
+## Scope and source-of-truth rule
+
+Before expanding an idea, check whether another document already owns the same
+engineering question.
+
+Prefer:
+
+```text
+one primary owner for the result
++ links from related ideas
+```
+
+over copying the same test plan, evidence or conclusion into multiple concepts.
+
+When a test supports several ideas:
+
+- keep the canonical methodology/result with the idea that owns the question;
+- link to it from adjacent ideas;
+- keep implementation/runtime evidence in the repository that owns the running
+  system;
+- use this incubator for architecture, bounded plans, sanitized summaries and
+  promotion criteria.
+
 ## Public-data rule
 
 Before opening a pull request, read [PUBLICATION.md](PUBLICATION.md).
