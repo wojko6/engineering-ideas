@@ -19,6 +19,20 @@ Explain the engineering value, operational value or learning objective.
 Record the important technical, hardware, privacy, security or compatibility
 constraints.
 
+## Related work and scope boundary
+
+List adjacent ideas or implementation repositories and state clearly what this
+idea owns.
+
+Define:
+
+- the primary engineering question;
+- which nearby topics belong elsewhere;
+- which evidence may be reused by reference;
+- where runtime/implementation evidence must live.
+
+Avoid creating a second source of truth for an existing active project.
+
 ## Proposed architecture
 
 Describe the smallest architecture worth evaluating.
