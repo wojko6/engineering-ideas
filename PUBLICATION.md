@@ -47,6 +47,37 @@ Use RFC-defined documentation examples or abstract labels such as
 `router`, `client-a`, `printer`, `collector` and `wan` instead of real
 deployment identifiers.
 
+## Screenshots and derived evidence
+
+A public screenshot may be included only after reviewing the entire frame for
+unrelated personal or deployment data.
+
+Redact or crop, as appropriate:
+
+- usernames and personal home paths;
+- SSIDs / BSSIDs;
+- MAC addresses and device GUIDs;
+- private/public/tailnet addresses;
+- hostnames and DDNS names;
+- account identifiers;
+- serial numbers and unrelated browser/application content.
+
+Preserve the technical values that support the finding, such as public device
+model, protocol, channel width, PHY rate, RSSI or benchmark result.
+
+If a screenshot is recreated, regenerated or manually reconstructed rather than
+being a direct redaction of the original evidence, label it as an
+**illustrative/sanitized reconstruction**. Do not present reconstructed pixels
+as the primary measurement evidence.
+
+The preferred evidence chain is:
+
+```text
+private raw evidence
+-> minimized/redacted public derivative
+-> summarized claim
+```
+
 ## Before each public change
 
 Check:
