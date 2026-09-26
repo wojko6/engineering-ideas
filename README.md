@@ -23,6 +23,7 @@ questions and promotion criteria before implementation work begins.
 | [GeForce NOW Packet-Loss Correlation Lab](ideas/gfn-packet-loss-correlation-lab/README.md) | Concept / diagnostic lab | Synchronized client/router captures to localize intermittent real-time loss. |
 | [LAN / Wi-Fi Performance & Latency Benchmark Lab](ideas/lan-wifi-performance-latency-benchmark/README.md) | Concept / benchmark lab | Controlled iperf3 Ethernet vs Wi-Fi 6/80 MHz on the current Legion client; 160 MHz only with a separately verified capable client. |
 | [Home Lab Attack Surface & Vulnerability Assessment](ideas/home-lab-attack-surface-vulnerability-assessment/README.md) | Concept / defensive security lab | Repeatable attack-surface, exposure and vulnerability assessment across owned devices and isolated lab targets. |
+| [Android Ad / Tracker Blocking Comparative Lab](ideas/android-ad-tracker-blocking-comparative-lab/README.md) | Concept / comparative privacy lab | Compare browser-native, Content Blocker API, local-VPN and router-side ad/tracker filtering with network evidence. |
 
 See [BACKLOG.md](BACKLOG.md) for additional ideas that have not yet been expanded.
 
