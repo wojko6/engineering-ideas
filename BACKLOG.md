@@ -13,13 +13,24 @@ time.
 
 [Expanded concept](ideas/lan-wifi-performance-latency-benchmark/README.md)
 
-Current focus:
+Current status:
 
-- finish the controlled 80 MHz / 160 MHz capability and association validation;
-- compare wired and Wi-Fi latency / jitter / throughput with the same server;
-- include the POCO wired-vs-Wi-Fi extension where useful;
-- preserve exact client capability evidence rather than assuming advertised
-  channel width.
+- Lenovo / RTL8852AE remains the validated 80 MHz reference;
+- Acer / MediaTek MT7922 has a live-validated 160 MHz association and
+  2402/2402 Mb/s PHY under strong-signal conditions;
+- POCO F8 Pro has a live-validated 160 MHz association;
+- the ASUS configured-vs-runtime 160 MHz discrepancy was isolated to a
+  controlled `bw_switch_160` family test without permanently committing the
+  temporary values.
+
+Next measurement phase:
+
+- run the same-server Acer 80 MHz vs 160 MHz iperf3 matrix;
+- capture idle latency, jitter, packet loss and latency under load;
+- repeat each accepted measurement enough times for a stable comparison;
+- add POCO wired-vs-Wi-Fi measurements where useful;
+- optionally compare GeForce NOW at 80 vs 160 MHz only as an application-level
+  validation after the LAN benchmark is complete.
 
 ### 2. ASUS Edge Architecture Maturity Roadmap — MVP only
 
@@ -135,6 +146,10 @@ network/security work.
 
 Resume only when the intermittent symptom is reproducible or when a controlled
 loss-localization exercise is intentionally scheduled.
+
+A normal GeForce NOW 80/160 MHz latency comparison does not activate this lab;
+that belongs to the LAN/Wi-Fi benchmark as optional application-level
+validation.
 
 ### Reproducible KDE Wayland Session
 
