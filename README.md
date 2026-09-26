@@ -40,7 +40,10 @@ time**. New ideas can be captured here without becoming immediate work.
 The current preferred sequence is:
 
 1. **LAN / Wi-Fi Performance & Latency Benchmark Lab**
-   - finish the 80/160 MHz validation and same-endpoint comparisons.
+   - 160 MHz capability/association validation is complete on the current Acer
+     and POCO test clients;
+   - next: same-endpoint 80/160 MHz throughput, latency, jitter and
+     latency-under-load comparison.
 2. **ASUS Edge Architecture Maturity Roadmap — MVP only**
    - Policy Model v3;
    - Tailscale/local-firewall consistency;
@@ -63,7 +66,7 @@ all remaining concepts in parallel.
 | Idea | Status | Summary |
 | --- | --- | --- |
 | [ASUS Edge Architecture Maturity Roadmap](ideas/asus-edge-architecture-maturity-roadmap/README.md) | Concept / architecture hardening | Policy Model v3, policy consistency, runtime drift, kernel packet CI, safer deployment, resilience, observability, IPv6 assurance and the eventual boundary toward OPNsense. |
-| [LAN / Wi-Fi Performance & Latency Benchmark Lab](ideas/lan-wifi-performance-latency-benchmark/README.md) | Concept / benchmark lab | Controlled iperf3 Ethernet vs Wi-Fi 6/80 MHz on the current Legion client; 160 MHz only with a separately verified capable client. |
+| [LAN / Wi-Fi Performance & Latency Benchmark Lab](ideas/lan-wifi-performance-latency-benchmark/README.md) | Active validation / benchmark lab | Controlled Ethernet/Wi-Fi and 80/160 MHz benchmarking with live-verified client capability, same-endpoint A/B measurements and latency-under-load testing. |
 | [Home Lab Attack Surface & Vulnerability Assessment](ideas/home-lab-attack-surface-vulnerability-assessment/README.md) | Concept / defensive security lab | Repeatable attack-surface, exposure and vulnerability assessment across owned devices and isolated lab targets. |
 | [GeForce NOW Packet-Loss Correlation Lab](ideas/gfn-packet-loss-correlation-lab/README.md) | Concept / diagnostic lab | Synchronized client/router captures to localize intermittent real-time loss. |
 
@@ -95,6 +98,26 @@ all remaining concepts in parallel.
 
 See [BACKLOG.md](BACKLOG.md) for the prioritized queue and additional remembered
 ideas that have not yet been expanded.
+
+## Scope ownership map
+
+Several ideas intentionally reuse the same devices and evidence sources. To
+avoid duplicate or conflicting documentation, each outcome has one primary
+owner inside this incubator:
+
+| Topic | Primary owner | Boundary |
+| --- | --- | --- |
+| Ethernet / Wi-Fi throughput, 80 vs 160 MHz, latency under load | [LAN / Wi-Fi Performance & Latency Benchmark Lab](ideas/lan-wifi-performance-latency-benchmark/README.md) | Cloud gaming may be used only as optional application-level validation. |
+| Intermittent GeForce NOW packet-loss localization | [GeForce NOW Packet-Loss Correlation Lab](ideas/gfn-packet-loss-correlation-lab/README.md) | Activate only for reproducible loss and synchronized capture. |
+| ASUS policy, drift, resilience, WLAN assurance architecture | [ASUS Edge Architecture Maturity Roadmap](ideas/asus-edge-architecture-maturity-roadmap/README.md) | Reference benchmark results; do not duplicate its measurement dataset. |
+| Android telemetry and DNS resolver-bypass methodology | [Privacy & Telemetry Audit](ideas/privacy-telemetry-audit/README.md) | Owns generic endpoint/DNS-path evidence, not blocker-product comparison. |
+| Android ad/tracker blocker comparison | [Android Ad / Tracker Blocking Comparative Lab](ideas/android-ad-tracker-blocking-comparative-lab/README.md) | Owns comparative blocking efficacy and trade-offs. |
+| Tailscale Android handover / DNS / route recovery | [Tailscale Android DNS Regression Lab](ideas/tailscale-android-dns-regression-lab/README.md) | Reuse transport states without duplicating raw Wi-Fi benchmarking. |
+| Home-lab exposure and vulnerability assessment | [Home Lab Attack Surface & Vulnerability Assessment](ideas/home-lab-attack-surface-vulnerability-assessment/README.md) | ASUS roadmap may reference the resulting exposure model. |
+
+If a test can support more than one idea, store the result with the owner of the
+**question being answered** and link to it from the other concept. Do not
+publish the same evidence as independent findings in multiple projects.
 
 ## Relationship to implementation repositories
 
