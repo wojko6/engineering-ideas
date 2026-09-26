@@ -1,6 +1,6 @@
 # Disaster Recovery Drill Automation
 
-**Status:** concept
+**Status:** concept / future automation layer
 
 ## Goal
 
@@ -12,6 +12,17 @@ keeping destructive restore steps explicit.
 The existing recovery work already validated restoration in a clean VMware
 environment and exposed real requirements such as UUID adaptation and SELinux
 relabeling.
+
+## Scope boundary
+
+The active Fedora repository already owns the current disaster-recovery
+architecture, refreshed recovery generation and controlled bare-metal restore
+work through its roadmap and Issue #32.
+
+This concept starts **after** those manual/reviewed procedures are stable. Its
+purpose is to automate repeatable disposable-environment drills without
+replacing the active recovery runbook or making destructive target selection
+implicit.
 
 ## Intended automation
 
