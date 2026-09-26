@@ -40,10 +40,13 @@ time**. New ideas can be captured here without becoming immediate work.
 The current preferred sequence is:
 
 1. **LAN / Wi-Fi Performance & Latency Benchmark Lab**
-   - 160 MHz capability/association validation is complete on the current Acer
-     and POCO test clients;
-   - next: same-endpoint 80/160 MHz throughput, latency, jitter and
-     latency-under-load comparison.
+   - the Acer MT7922 HE80/HE160 throughput investigation and independent Android
+     HE160 reference comparison are complete;
+   - the resulting bounded interoperability case study has been promoted to the
+     ASUS Edge implementation repository;
+   - deferred follow-up: boot the Acer from Fedora Workstation Live and repeat
+     the HE160 throughput test with the Linux MT7922 driver path before deciding
+     whether the case study needs an OS/driver-specific addendum.
 2. **ASUS Edge Architecture Maturity Roadmap — MVP only**
    - Policy Model v3;
    - Tailscale/local-firewall consistency;
@@ -66,7 +69,7 @@ all remaining concepts in parallel.
 | Idea | Status | Summary |
 | --- | --- | --- |
 | [ASUS Edge Architecture Maturity Roadmap](ideas/asus-edge-architecture-maturity-roadmap/README.md) | Concept / architecture hardening | Policy Model v3, policy consistency, runtime drift, kernel packet CI, safer deployment, resilience, observability, IPv6 assurance and the eventual boundary toward OPNsense. |
-| [LAN / Wi-Fi Performance & Latency Benchmark Lab](ideas/lan-wifi-performance-latency-benchmark/README.md) | Active validation / benchmark lab | Controlled Ethernet/Wi-Fi and 80/160 MHz benchmarking with live-verified client capability, same-endpoint A/B measurements and latency-under-load testing. |
+| [LAN / Wi-Fi Performance & Latency Benchmark Lab](ideas/lan-wifi-performance-latency-benchmark/README.md) | Validated baseline / deferred follow-up | Controlled 80/160 MHz benchmarking with live-verified client capability; current follow-up is a deferred Fedora Live HE160 isolation test on the Acer MT7922. |
 | [Home Lab Attack Surface & Vulnerability Assessment](ideas/home-lab-attack-surface-vulnerability-assessment/README.md) | Concept / defensive security lab | Repeatable attack-surface, exposure and vulnerability assessment across owned devices and isolated lab targets. |
 | [GeForce NOW Packet-Loss Correlation Lab](ideas/gfn-packet-loss-correlation-lab/README.md) | Concept / diagnostic lab | Synchronized client/router captures to localize intermittent real-time loss. |
 
