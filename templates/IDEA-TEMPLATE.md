@@ -50,8 +50,8 @@ environment required before risky changes.
 
 List any evidence that must remain private or be sanitized before publication.
 
-Follow [the repository publication policy](../../PUBLICATION.md) when this file
-lives under `ideas/<idea-name>/README.md`.
+Follow `PUBLICATION.md` at the repository root. When copying this template into
+`ideas/<idea-name>/README.md`, keep the publication boundary explicit.
 
 ## Promotion criterion
 
