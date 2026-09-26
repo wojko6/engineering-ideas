@@ -22,6 +22,26 @@ The primary endpoint is the hardened/debloated POCO Android device. Treat this
 as a **post-hardening case study**, not as a factory-vs-debloated before/after
 comparison unless equivalent pre-hardening evidence exists.
 
+## Scope ownership
+
+This lab owns **comparative blocking efficacy and trade-offs between blocking
+layers**:
+
+- browser-native blocking;
+- browser Content Blocker API;
+- Android local-VPN filtering;
+- router/network-side filtering.
+
+Generic endpoint telemetry classification and DNS resolver-bypass methodology
+belong in
+[Privacy & Telemetry Audit](../privacy-telemetry-audit/README.md).
+
+Tailscale-specific DNS/routing recovery across handovers belongs in
+[Tailscale Android DNS Regression Lab](../tailscale-android-dns-regression-lab/README.md).
+
+The labs may reuse sanitized evidence, but they should not duplicate the same
+measurement as separate project results.
+
 ## Main comparison set
 
 ### 1. Brave Shields
