@@ -83,12 +83,12 @@ all remaining concepts in parallel.
 | Idea | Status | Summary |
 | --- | --- | --- |
 | [System Drift Detector](ideas/system-drift-detector/README.md) | Concept | Compare the live workstation with repository-defined desired state. |
-| [Fedora Upgrade Readiness Engine](ideas/fedora-upgrade-readiness-engine/README.md) | Concept | Pre-upgrade compatibility and rollback-readiness assessment for major Fedora upgrades. |
+| [Fedora Upgrade Readiness Engine](ideas/fedora-upgrade-readiness-engine/README.md) | Concept / future automation layer | Reusable readiness automation after the active Fedora major-upgrade workflow is stable; current execution remains in the Fedora workstation roadmap. |
 | [Btrfs Safe Change & Rollback](ideas/btrfs-safe-change-rollback/README.md) | Concept | Guarded snapshot/change/verify/rollback workflow for risky system changes. |
-| [Disaster Recovery Drill Automation](ideas/disaster-recovery-drill-automation/README.md) | Concept | Automate safe clean-room Fedora recovery drills in disposable test environments. |
+| [Disaster Recovery Drill Automation](ideas/disaster-recovery-drill-automation/README.md) | Concept / future automation layer | Automate repeatable disposable-environment recovery drills after the active Fedora recovery workflow is stable. |
 | [Workstation Health Dashboard](ideas/workstation-health-dashboard/README.md) | Concept | Evidence-backed summary of workstation health and maintenance state. |
 | [Fedora Localization Audit & Repair Engine](ideas/fedora-localization-audit-repair-engine/README.md) | Concept | Reusable localization scan, repair, install and verification pipeline. |
-| [Reproducible KDE Wayland Session](ideas/reproducible-kde-wayland-session/README.md) | Concept | Optional KDE Wayland session without compromising canonical GNOME state. |
+| [Reproducible KDE Wayland Session](ideas/reproducible-kde-wayland-session/README.md) | Concept / execution tracked in Fedora roadmap | Architecture notes for optional KDE coexistence; current planning and acceptance remain in the Fedora workstation project. |
 
 ## Desktop / experimental software
 
