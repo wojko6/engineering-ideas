@@ -1,11 +1,29 @@
 # Reproducible KDE Wayland Session
 
-**Status:** concept
+**Status:** concept / execution tracked in Fedora roadmap
 
 ## Goal
 
 Add an optional KDE Plasma Wayland session to the Fedora workstation without
 turning KDE into the canonical desktop or damaging the existing GNOME state.
+
+## Scope boundary
+
+Active planning and acceptance for GNOME + KDE Plasma coexistence belongs to
+the public
+[Fedora Workstation Engineering Roadmap](https://github.com/wojko6/fedora-workstation-setup/blob/main/ROADMAP.md)
+and its Issue #12.
+
+That repository owns:
+
+- the current accepted GNOME baseline;
+- the implementation plan;
+- clean-room and physical validation;
+- rollback and promotion decisions.
+
+This incubator page remains a compact architecture concept. It should not become
+a second execution checklist or claim that KDE has already been promoted into
+the accepted workstation state.
 
 ## Intended workflow
 
