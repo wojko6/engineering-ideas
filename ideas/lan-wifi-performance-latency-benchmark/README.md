@@ -1,6 +1,6 @@
 # LAN / Wi-Fi Performance & Latency Benchmark Lab
 
-**Status:** active validation / benchmark lab  
+**Status:** validated baseline / deferred follow-up  
 **Primary tool:** iperf3  
 **Optional application-level validation:** GeForce NOW / Xbox Cloud Gaming
 
@@ -228,6 +228,87 @@ Record application-visible:
 This phase answers whether the higher local PHY / LAN performance produces a
 meaningful application-level difference. It must not be used to attribute
 Internet-side loss to Wi-Fi.
+
+## Current validated outcome
+
+The initial HE80/HE160 investigation is complete enough to support a bounded
+case study.
+
+The current validated comparison established that:
+
+- the Acer MT7922 performs strongly at HE80;
+- the same client shows severe, direction-dependent throughput degradation at
+  HE160;
+- updating the Windows MT7922 driver improved the HE160 symptom but did not
+  remove it;
+- an independent Android 2x2 client achieved substantially higher throughput on
+  the same ASUS HE160 radio;
+- the ASUS/Broadcom station retry-related counters must not be interpreted
+  one-to-one as TCP retransmissions.
+
+The public case study is maintained in the implementation repository:
+
+[Wi-Fi 6 HE160 Interoperability – MediaTek MT7922 vs ASUS/Broadcom](https://github.com/wojko6/Advanced-ASUS-Edge-Gateway-ZTNA-Infrastructure/blob/main/docs/wifi6-he160-mt7922-interoperability-case-study.md)
+
+The incubator remains the place for follow-up experiments that are not yet
+necessary to support the current published claim.
+
+## Deferred follow-up – Fedora Live MT7922 isolation test
+
+Do **not** install Linux on the Acer for this experiment.
+
+When the investigation is resumed, boot Fedora Workstation from a Live USB and
+use the live environment only. The Windows installation should remain
+untouched.
+
+Purpose:
+
+- keep the same MT7922 hardware and ASUS/Broadcom AP;
+- replace the Windows driver/software path with the Linux MT7922 driver path;
+- determine whether the severe HE160 throughput degradation reproduces under
+  Fedora Live.
+
+Before any benchmark, capture:
+
+```bash
+lspci -nnk | grep -A4 -i network
+iw dev
+iw dev <interface> link
+iw dev <interface> station dump
+```
+
+Confirm that the client is actually associated at 160 MHz and record:
+
+- Linux kernel version;
+- active kernel driver;
+- firmware identity when available;
+- channel width;
+- NSS;
+- RSSI;
+- PHY rate.
+
+Then repeat the same 120-second four-stream TCP pair used in the published case:
+
+```bash
+iperf3 -c SERVER_IP -t 120 -P 4
+iperf3 -c SERVER_IP -t 120 -P 4 -R
+```
+
+Keep the same wired server, AP, channel-width state and approximately the same
+client position.
+
+Interpretation boundary:
+
+- if Fedora Live produces high HE160 throughput while Windows remains poor, the
+  evidence would shift strongly toward the Windows driver/software path;
+- if Fedora Live reproduces the severe HE160 degradation, suspicion would shift
+  away from a Windows-only explanation and toward MT7922 firmware/hardware
+  behavior or MT7922 ↔ ASUS/Broadcom interoperability;
+- neither outcome by itself proves a universal MediaTek or Broadcom defect.
+
+If this follow-up materially changes the fault-domain assessment, update the
+published ASUS Edge case study with a dated Linux comparison section rather than
+creating a competing case study here.
 
 ## POCO same-device extension
 
