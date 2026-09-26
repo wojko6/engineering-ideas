@@ -106,8 +106,9 @@ work because the same desired-state thinking can be reused.
 
 [Expanded concept](ideas/fedora-upgrade-readiness-engine/README.md)
 
-Useful before the next Fedora major-version upgrade and a good place to reuse
-drift, backup and rollback checks.
+Future automation layer for the major-upgrade readiness workflow. The active
+upgrade procedure and Issue #13 remain owned by the Fedora workstation
+repository; promote automation here only after that manual workflow is stable.
 
 ## Later
 
@@ -121,8 +122,10 @@ Build after the desired-state / upgrade workflow is stable.
 
 [Expanded concept](ideas/disaster-recovery-drill-automation/README.md)
 
-Extend the already validated recovery work into repeatable clean-room drills,
-measured recovery time and later evidence-backed RTO/RPO.
+Future automation layer for repeatable clean-room drills after the active
+Fedora recovery refresh / controlled bare-metal work (Issue #32) is stable.
+Keep the operational runbook and destructive acceptance work in the Fedora
+repository.
 
 ### Workstation Health Dashboard
 
@@ -155,8 +158,9 @@ validation.
 
 [Expanded concept](ideas/reproducible-kde-wayland-session/README.md)
 
-Interesting workstation experiment, but not part of the current
-network/security path.
+The concept remains optional here, while active planning and acceptance for
+GNOME + KDE coexistence are tracked by Fedora roadmap Issue #12. Do not maintain
+a second execution checklist in this incubator.
 
 ### Universal Tabs for GNOME
 
