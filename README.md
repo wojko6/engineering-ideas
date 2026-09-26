@@ -1,19 +1,39 @@
 # Engineering Ideas
 
-Private incubator for technical concepts that are not yet mature enough to
-deserve their own implementation repository.
+Public engineering incubator for technical concepts that are not yet mature
+enough to deserve their own implementation repository.
 
-The goal is to preserve architecture decisions, MVP boundaries, open questions
-and promotion criteria before implementation work begins.
+The purpose of this repository is to preserve architecture decisions, bounded
+MVPs, open questions, validation plans and promotion criteria before active
+implementation begins.
 
-The repository is deliberately broader than the active work queue. New ideas can
-be captured without turning every idea into an immediate project.
+> **Status boundary:** an item marked `Concept` is a design or test plan, not a
+> claim that the feature is deployed, production-ready or live-validated.
+
+## Why this repository exists
+
+The implementation repositories answer **what is running or being built**.
+This repository answers **what may be worth building next, why, and under what
+conditions**.
+
+That distinction is deliberate:
+
+```text
+idea
+  ↓
+architecture / MVP / risks / acceptance criteria
+  ↓
+controlled implementation
+  ↓
+validation and evidence
+  ↓
+promotion into an implementation repository
+```
 
 ## Working rule
 
 Keep at most **one or two implementation-heavy projects active at the same
-time**. Everything else remains documented here until the current work reaches a
-clear checkpoint.
+time**. New ideas can be captured here without becoming immediate work.
 
 ## Suggested execution path
 
@@ -35,8 +55,8 @@ The current preferred sequence is:
 6. **Android Ad / Tracker Blocking Comparative Lab**
    - compare browser-native, local-VPN and router-side filtering layers.
 
-After those, choose the next item based on practical need rather than opening all
-remaining concepts in parallel.
+After those, choose the next item based on practical need rather than opening
+all remaining concepts in parallel.
 
 ## Network, edge and security
 
@@ -76,15 +96,54 @@ remaining concepts in parallel.
 See [BACKLOG.md](BACKLOG.md) for the prioritized queue and additional remembered
 ideas that have not yet been expanded.
 
+## Relationship to implementation repositories
+
+Ideas that become active should move into the repository that owns the running
+implementation and its evidence. Current examples include:
+
+- [Advanced ASUS Edge Gateway & Zero-Trust Lab](https://github.com/wojko6/Advanced-ASUS-Edge-Gateway-ZTNA-Infrastructure)
+- [Fedora Workstation Setup](https://github.com/wojko6/fedora-workstation-setup)
+
+This repository should not become a second operational source of truth for those
+projects.
+
+## Public-data boundary
+
+This repository is intentionally suitable for public viewing.
+
+Do not commit credentials, auth keys, private keys, real deployment addresses,
+hostnames, MAC addresses, raw packet captures, browser dumps, private logs,
+device identifiers, storage identifiers, personal browsing history or
+deployment-specific configuration.
+
+Use abstract names or documentation-only example ranges instead.
+
+See [PUBLICATION.md](PUBLICATION.md) for the publication checklist and
+[SECURITY.md](SECURITY.md) for reporting accidental sensitive-data exposure.
+
+A lightweight automated check runs in CI to catch common publication mistakes,
+but human review remains required.
+
 ## Workflow
 
 1. Capture the problem and intended user experience.
 2. Define a bounded MVP.
 3. Record architectural constraints and rejected shortcuts.
 4. Split implementation into stages.
-5. Keep operational source-of-truth material in the active implementation
+5. Define evidence and rollback requirements before risky live changes.
+6. Keep operational source-of-truth material in the active implementation
    repository rather than duplicating it here.
-6. Promote an idea into its own repository only when the MVP and technical
+7. Promote an idea into its own repository only when the MVP and technical
    direction are stable enough to justify active development.
 
 Use [the idea template](templates/IDEA-TEMPLATE.md) for future concepts.
+
+## Contributing
+
+Corrections, methodology improvements and architecture discussion are welcome.
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+Unless stated otherwise, this repository is licensed under the
+[MIT License](LICENSE).

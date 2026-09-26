@@ -1,45 +1,59 @@
 # Idea title
 
-**Status:** concept  
-**Owner:**  
-**Created:**  
+**Status:** concept
 
 ## Problem
 
-What problem does this idea solve?
+Describe the concrete problem or engineering question.
 
 ## Goal
 
-What should the finished experience/capability provide?
+State the intended outcome without implying that it is already implemented.
 
-## MVP
+## Why it is interesting
 
-What is the smallest implementation that proves the concept?
-
-## Architecture
-
-Main components and boundaries.
+Explain the engineering value, operational value or learning objective.
 
 ## Constraints
 
-Platform, security, compatibility, performance or maintenance constraints.
+Record the important technical, hardware, privacy, security or compatibility
+constraints.
 
-## Roadmap
+## Proposed architecture
 
-1. Feasibility
-2. MVP
-3. Hardening
-4. Integrations
-5. Promotion
+Describe the smallest architecture worth evaluating.
 
-## Evidence / acceptance
+Use abstract labels or documentation-only example values. Do not copy live
+deployment configuration into this repository.
 
-What would prove the idea actually works?
+## MVP
 
-## Open questions
+Define the smallest implementation/test that can answer the core question.
 
-Questions that must be answered before implementation or promotion.
+## Validation
+
+Specify what evidence would distinguish:
+
+- PASS;
+- FAIL;
+- inconclusive;
+- not tested.
+
+Prefer measurements and reproducible checks over screenshots alone.
+
+## Risks and rollback
+
+Describe failure modes, operational impact and the rollback or disposable test
+environment required before risky changes.
+
+## Public-data boundary
+
+List any evidence that must remain private or be sanitized before publication.
+
+Follow [the repository publication policy](../../PUBLICATION.md) when this file
+lives under `ideas/<idea-name>/README.md`.
 
 ## Promotion criterion
 
-When should this idea move into its own active project repository?
+Define when this idea is mature enough to move into an implementation
+repository or active project backlog.

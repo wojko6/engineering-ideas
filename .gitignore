@@ -1,0 +1,39 @@
+# Local editor / OS state
+.DS_Store
+.idea/
+.vscode/
+*~
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.ovpn
+*.mobileconfig
+secrets/
+private/
+
+# Raw network / browser evidence
+*.pcap
+*.pcapng
+*.cap
+*.har
+captures/
+evidence/raw/
+
+# Logs and local databases
+*.log
+*.sqlite
+*.sqlite3
+*.db
+
+# Temporary output
+tmp/
+temp/
+*.tmp
