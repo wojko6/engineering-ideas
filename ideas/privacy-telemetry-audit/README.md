@@ -7,6 +7,22 @@
 Build a repeatable method for measuring what a workstation, browser or mobile
 device contacts during controlled scenarios.
 
+## Scope ownership
+
+This idea owns the **generic telemetry and resolver-path methodology**:
+
+- what an endpoint contacts during a controlled scenario;
+- which DNS path is actually used;
+- resolver bypass / enforcement behavior across transports;
+- post-hardening Android telemetry correlation.
+
+It does not own product-by-product blocker efficacy. Comparative ad/tracker
+blocking belongs in
+[Android Ad / Tracker Blocking Comparative Lab](../android-ad-tracker-blocking-comparative-lab/README.md).
+
+Tailscale-specific handover, resume and DNS/routing recovery belongs in
+[Tailscale Android DNS Regression Lab](../tailscale-android-dns-regression-lab/README.md).
+
 ## Candidate scenarios
 
 - idle;
