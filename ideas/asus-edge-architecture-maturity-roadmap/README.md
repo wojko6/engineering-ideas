@@ -399,7 +399,14 @@ Do not treat IPv6 as a mechanical translation of IPv4 rules.
 
 ## Workstream 13 — WLAN assurance and performance
 
-Build on the 80/160 MHz benchmark work.
+Build on the
+[LAN / Wi-Fi Performance & Latency Benchmark Lab](../lan-wifi-performance-latency-benchmark/README.md)
+instead of duplicating its test matrix or evidence here.
+
+The benchmark owns the client capability checks, 80/160 MHz A/B methodology,
+iperf3 measurements and optional application-level validation. This roadmap owns
+only the architectural question: which WLAN assurance signals should eventually
+be exposed, validated or monitored by the active ASUS project.
 
 Record where available:
 
@@ -418,6 +425,12 @@ Record where available:
 - latency under load.
 
 Use the same-client / same-server methodology whenever possible.
+
+A current controlled validation showed that configured 160 MHz state and
+operational radio width can diverge. Treat configured state, runtime AP state
+and client association as separate evidence layers. Keep raw operational
+evidence in the active ASUS implementation repository after sanitization rather
+than turning this incubator roadmap into a second source of truth.
 
 ## Workstream 14 — Bufferbloat / QoS assessment
 
