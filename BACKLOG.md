@@ -143,6 +143,17 @@ network/security work.
 
 ## Optional / event-driven
 
+### Secure mobile Grafana access over Tailscale
+
+[Expanded concept](ideas/secure-mobile-grafana-access/README.md)
+
+Evaluate a phone-friendly, self-hosted Grafana access path without exposing the
+monitoring UI to the public Internet. The current reference Grafana instance is
+loopback-only, while the official Grafana mobile app is oriented around Grafana
+Cloud, so the first practical path should be browser access over Tailscale with
+strict source/access controls. Re-evaluate the native Android app if upstream
+adds suitable self-managed Grafana support.
+
 ### Microsoft 365 on Fedora via Bottles compatibility lab
 
 [Expanded concept](ideas/microsoft-365-bottles-fedora-compatibility-lab/README.md)
