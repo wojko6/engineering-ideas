@@ -143,6 +143,16 @@ network/security work.
 
 ## Optional / event-driven
 
+### Microsoft 365 on Fedora via Bottles compatibility lab
+
+[Expanded concept](ideas/microsoft-365-bottles-fedora-compatibility-lab/README.md)
+
+Activate only when the upstream Bottles Office 365 port is mature enough to be
+useful for a controlled test rather than routine break/fix work. Current
+upstream guidance explicitly treats the port as unstable and not recommended
+for daily use, so keep this parked for now.
+
+
 ### GeForce NOW Packet-Loss Correlation Lab
 
 [Expanded concept](ideas/gfn-packet-loss-correlation-lab/README.md)
