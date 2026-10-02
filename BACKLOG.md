@@ -141,6 +141,21 @@ checks, not as an independent source of truth.
 Useful when localization problems recur; otherwise keep parked behind the
 network/security work.
 
+### RouterCloud Metro UI
+
+[Expanded concept](ideas/routercloud-metro-ui/README.md)
+
+Define a shared tile-based UX direction for RouterCloud Web and the future
+private Android client.
+
+The visual language should be inspired by Windows 8 / Windows Phone /
+Windows 10 Mobile while retaining modern responsive behavior and the existing
+RouterCloud security boundary.
+
+Operational implementation remains owned by the active ASUS Edge project. This
+incubator entry owns the visual concept, bounded browser MVP and shared design
+language only.
+
 ## Optional / event-driven
 
 ### Secure mobile Grafana access over Tailscale

@@ -72,6 +72,7 @@ all remaining concepts in parallel.
 | [LAN / Wi-Fi Performance & Latency Benchmark Lab](ideas/lan-wifi-performance-latency-benchmark/README.md) | Validated baseline / deferred follow-up | Controlled 80/160 MHz benchmarking with live-verified client capability; current follow-up is a deferred Fedora Live HE160 isolation test on the Acer MT7922. |
 | [Home Lab Attack Surface & Vulnerability Assessment](ideas/home-lab-attack-surface-vulnerability-assessment/README.md) | Concept / defensive security lab | Repeatable attack-surface, exposure and vulnerability assessment across owned devices and isolated lab targets. |
 | [GeForce NOW Packet-Loss Correlation Lab](ideas/gfn-packet-loss-correlation-lab/README.md) | Concept / diagnostic lab | Synchronized client/router captures to localize intermittent real-time loss. |
+| [RouterCloud Metro UI](ideas/routercloud-metro-ui/README.md) | Concept / UX direction | Tile-based RouterCloud Web and Android design inspired by Windows 8 / Windows Phone, while preserving the existing backend security boundary. |
 
 ## Android, privacy and telemetry
 
