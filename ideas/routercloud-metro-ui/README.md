@@ -251,3 +251,12 @@ Promote this idea into active RouterCloud implementation when:
 The image below is a design target, not evidence of a deployed interface.
 
 ![RouterCloud Metro UI concept](routercloud-metro-ui-concept.jpg)
+
+## Android concept visualization
+
+The mobile design has been expanded into a dedicated Android concept covering
+the dashboard, file browser and synchronization/activity views.
+
+See [ANDROID-UI.md](ANDROID-UI.md) for the detailed mobile UX direction.
+
+![RouterCloud Android UI concept](routercloud-android-ui-concept.jpg)
