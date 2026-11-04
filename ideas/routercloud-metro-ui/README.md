@@ -4,8 +4,9 @@
 
 ## Problem
 
-The current RouterCloud browser interface is functional, but visually it still
-resembles a conventional file manager.
+The operational RouterCloud Web and Android clients already include selected
+Metro-inspired elements. Their presentation is not yet a single consistent,
+validated cross-platform tile/design system.
 
 The intended direction is a more distinctive, fast and touch-friendly interface
 for the private RouterCloud service running on the ASUS Edge platform.
