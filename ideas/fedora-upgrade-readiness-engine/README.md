@@ -1,6 +1,6 @@
 # Fedora Upgrade Readiness Engine
 
-**Status:** concept / future automation layer
+**Status (2026-11-04):** future reusable automation concept. Manual Fedora 45/NVIDIA 620 preflight B1–B8 exists in [Fedora workstation documentation](https://github.com/wojko6/fedora-workstation-setup/blob/main/docs/upgrade-preflights/2026-11-04-fedora45-nvidia620.md), but full B9 and an actual upgrade were not performed.
 
 ## Goal
 

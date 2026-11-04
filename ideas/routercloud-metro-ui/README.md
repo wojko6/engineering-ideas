@@ -1,11 +1,12 @@
 # RouterCloud Metro UI
 
-**Status:** concept / visual UX direction
+**Status (2026-11-04):** ongoing design concept; selected Metro-inspired Web/Android features are already implemented in their owning projects, but a complete unified UX/design system is not accepted.
 
 ## Problem
 
-The current RouterCloud browser interface is functional, but visually it still
-resembles a conventional file manager.
+The operational RouterCloud Web and Android clients already include selected
+Metro-inspired elements. Their presentation is not yet a single consistent,
+validated cross-platform tile/design system.
 
 The intended direction is a more distinctive, fast and touch-friendly interface
 for the private RouterCloud service running on the ASUS Edge platform.
@@ -15,7 +16,7 @@ for the private RouterCloud service running on the ASUS Edge platform.
 Create one consistent RouterCloud design language for:
 
 - RouterCloud Web;
-- the future private RouterCloud Android client.
+- the already existing private RouterCloud Android client (with further UX work planned).
 
 The visual direction is inspired by the tile-based interfaces of:
 
@@ -34,7 +35,9 @@ A dedicated tile-based frontend can turn it from a technically useful browser
 file service into a coherent product-like experience without changing the
 security model.
 
-The same design system can later be reused by the private Android client.
+Further common design tokens and layouts can be reconciled between the
+existing Android client and RouterCloud Web without conflating current features
+with the complete proposed visual system.
 
 ## Visual direction
 
@@ -89,7 +92,7 @@ The main RouterCloud start screen should remain clearly tile-oriented.
 
 ## Android client
 
-The private Android client should use the same visual language.
+The existing [RouterCloud Android implementation](https://github.com/wojko6/routercloud-android) already uses Metro-inspired navigation and favorites; the following extended dashboard is a *candidate*, not a claim that every tile exists:
 
 Candidate mobile tiles:
 

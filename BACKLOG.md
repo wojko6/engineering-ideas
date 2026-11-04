@@ -145,8 +145,7 @@ network/security work.
 
 [Expanded concept](ideas/routercloud-metro-ui/README.md)
 
-Define a shared tile-based UX direction for RouterCloud Web and the future
-private Android client.
+Extend and standardize the shared tile-based UX direction beyond the already implemented RouterCloud Web elements and existing [RouterCloud Android client](https://github.com/wojko6/routercloud-android). The complete cross-platform design system remains a concept; the client itself is not merely a future idea.
 
 The visual language should be inspired by Windows 8 / Windows Phone /
 Windows 10 Mobile while retaining modern responsive behavior and the existing
