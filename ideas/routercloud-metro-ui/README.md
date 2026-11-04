@@ -1,6 +1,6 @@
 # RouterCloud Metro UI
 
-**Status:** concept / visual UX direction
+**Status (2026-11-04):** ongoing design concept; selected Metro-inspired Web/Android features are already implemented in their owning projects, but a complete unified UX/design system is not accepted.
 
 ## Problem
 
@@ -15,7 +15,7 @@ for the private RouterCloud service running on the ASUS Edge platform.
 Create one consistent RouterCloud design language for:
 
 - RouterCloud Web;
-- the future private RouterCloud Android client.
+- the already existing private RouterCloud Android client (with further UX work planned).
 
 The visual direction is inspired by the tile-based interfaces of:
 
@@ -89,7 +89,7 @@ The main RouterCloud start screen should remain clearly tile-oriented.
 
 ## Android client
 
-The private Android client should use the same visual language.
+The existing [RouterCloud Android implementation](https://github.com/wojko6/routercloud-android) already uses Metro-inspired navigation and favorites; the following extended dashboard is a *candidate*, not a claim that every tile exists:
 
 Candidate mobile tiles:
 
