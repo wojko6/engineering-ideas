@@ -35,7 +35,9 @@ A dedicated tile-based frontend can turn it from a technically useful browser
 file service into a coherent product-like experience without changing the
 security model.
 
-The same design system can later be reused by the private Android client.
+Further common design tokens and layouts can be reconciled between the
+existing Android client and RouterCloud Web without conflating current features
+with the complete proposed visual system.
 
 ## Visual direction
 
