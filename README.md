@@ -72,7 +72,9 @@ all remaining concepts in parallel.
 | [LAN / Wi-Fi Performance & Latency Benchmark Lab](ideas/lan-wifi-performance-latency-benchmark/README.md) | Validated baseline / deferred follow-up | Controlled 80/160 MHz benchmarking with live-verified client capability; current follow-up is a deferred Fedora Live HE160 isolation test on the Acer MT7922. |
 | [Home Lab Attack Surface & Vulnerability Assessment](ideas/home-lab-attack-surface-vulnerability-assessment/README.md) | Concept / defensive security lab | Repeatable attack-surface, exposure and vulnerability assessment across owned devices and isolated lab targets. |
 | [GeForce NOW Packet-Loss Correlation Lab](ideas/gfn-packet-loss-correlation-lab/README.md) | Concept / diagnostic lab | Synchronized client/router captures to localize intermittent real-time loss. |
-| [RouterCloud Metro UI](ideas/routercloud-metro-ui/README.md) | Concept / UX direction | Tile-based RouterCloud Web and Android design inspired by Windows 8 / Windows Phone, while preserving the existing backend security boundary. |
+| [RouterCloud Metro UI](ideas/routercloud-metro-ui/README.md) | Design concept / initial Web and Android features implemented | Tile-based RouterCloud Web and Android design inspired by Windows 8 / Windows Phone, while preserving the existing backend security boundary. |
+
+**Dated scope (2026-11-04):** RouterCloud Web and the [Android implementation](https://github.com/wojko6/routercloud-android) now contain Metro-inspired UI elements, favorites and synchronization features, but this incubator retains the *future shared design system* concept. Similarly, [Fedora KDE](https://github.com/wojko6/fedora-workstation-setup) runs in a physical pilot and is not yet a reproducible accepted GNOME replacement.
 
 ## Android, privacy and telemetry
 
@@ -92,7 +94,7 @@ all remaining concepts in parallel.
 | [Disaster Recovery Drill Automation](ideas/disaster-recovery-drill-automation/README.md) | Concept / future automation layer | Automate repeatable disposable-environment recovery drills after the active Fedora recovery workflow is stable. |
 | [Workstation Health Dashboard](ideas/workstation-health-dashboard/README.md) | Concept | Evidence-backed summary of workstation health and maintenance state. |
 | [Fedora Localization Audit & Repair Engine](ideas/fedora-localization-audit-repair-engine/README.md) | Concept | Reusable localization scan, repair, install and verification pipeline. |
-| [Reproducible KDE Wayland Session](ideas/reproducible-kde-wayland-session/README.md) | Concept / execution tracked in Fedora roadmap | Architecture notes for optional KDE coexistence; current planning and acceptance remain in the Fedora workstation project. |
+| [Reproducible KDE Wayland Session](ideas/reproducible-kde-wayland-session/README.md) | Operating KDE pilot / reproducibility still pending | Architecture notes for optional KDE coexistence; current planning and acceptance remain in the Fedora workstation project. |
 
 ## Desktop / experimental software
 
