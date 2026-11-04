@@ -1,6 +1,6 @@
 # Reproducible KDE Wayland Session
 
-**Status:** concept / execution tracked in Fedora roadmap
+**Status (2026-11-04):** physical Fedora 44/KDE Plasma 6.8.2 pilot exists; reproducible coexistence, clean-room restore and accepted baseline promotion remain open in the Fedora repository.
 
 ## Goal
 
