@@ -102,6 +102,7 @@ all remaining concepts in parallel.
 | --- | --- | --- |
 | [Stela Apple Silicon-on-x86 Compatibility Lab — Lenovo Legion 5](ideas/stela-apple-silicon-on-legion-lab/README.md) | Concept / parked | Evaluate current Stela compatibility on Ryzen 7 5800H + RTX 3060 Laptop using a verified, disposable USB; OpenCore stays ON HOLD, no installation or disk writes approved. |
 | [Universal Tabs for GNOME](ideas/gnome-universal-tabs/README.md) | Concept / architecture | System-wide window grouping and tabbed workspace model for GNOME, with later deep application adapters. |
+| [Fedora Application Discovery and Controlled Evaluation](ideas/fedora-application-discovery-evaluation/README.md) | Concept / parked | Curated AlternativeTo candidate shortlist for KDE desktop workflows, AppImage/Flatpak tooling, monitoring and gaming; read-only screening before optional isolated trials. |
 
 See [BACKLOG.md](BACKLOG.md) for the prioritized queue and additional remembered
 ideas that have not yet been expanded.

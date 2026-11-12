@@ -216,6 +216,18 @@ a second execution checklist in this incubator.
 Large standalone software/desktop project. Keep parked until there is deliberate
 time for application architecture work.
 
+### Fedora Application Discovery and Controlled Evaluation — AlternativeTo Shortlist
+
+[Expanded concept](ideas/fedora-application-discovery-evaluation/README.md)
+
+**Concept / parked.** Capture candidates found through AlternativeTo without
+creating twelve active projects or treating upstream feature claims as local
+validation. Initial priority: Vicinae, Gear Lever and Warehouse; Glance and
+NetAlertX are secondary monitoring/UI candidates. Compare against existing KDE,
+launcher, packaging and monitoring capabilities before selecting at most one or
+two non-invasive experiments. No installation or system changes are authorized
+by this backlog entry.
+
 ## Router ideas already tracked in the active ASUS project
 
 The following remain useful, but their operational source of truth is the active
