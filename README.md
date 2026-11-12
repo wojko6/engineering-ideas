@@ -100,6 +100,7 @@ all remaining concepts in parallel.
 
 | Idea | Status | Summary |
 | --- | --- | --- |
+| [Stela Apple Silicon-on-x86 Compatibility Lab — Lenovo Legion 5](ideas/stela-apple-silicon-on-legion-lab/README.md) | Concept / parked | Evaluate Stela v0.3.1 on Ryzen 7 5800H + RTX 3060 Laptop using a verified, disposable USB; OpenCore stays ON HOLD, no installation or disk writes approved. |
 | [Universal Tabs for GNOME](ideas/gnome-universal-tabs/README.md) | Concept / architecture | System-wide window grouping and tabbed workspace model for GNOME, with later deep application adapters. |
 
 See [BACKLOG.md](BACKLOG.md) for the prioritized queue and additional remembered
