@@ -157,6 +157,17 @@ language only.
 
 ## Optional / event-driven
 
+### Stela Apple Silicon-on-x86 Compatibility Lab — Lenovo Legion 5
+
+[Expanded concept](ideas/stela-apple-silicon-on-legion-lab/README.md)
+
+Parked research alternative to the ON HOLD OpenCore effort. Stela v0.3.1 may
+be worth a read-only compatibility preflight on Ryzen 7 5800H / RTX 3060 Laptop.
+The former `TAHOE_OC` SanDisk USB may be repurposed **only** after verifying its
+identity, preserving any needed data and separately authorizing its erasure.
+Keep the Fedora installation and internal disks untouched; do not treat
+upstream GPU-family support as a validated laptop boot.
+
 ### Secure mobile Grafana access over Tailscale
 
 [Expanded concept](ideas/secure-mobile-grafana-access/README.md)
