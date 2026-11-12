@@ -161,8 +161,9 @@ language only.
 
 [Expanded concept](ideas/stela-apple-silicon-on-legion-lab/README.md)
 
-Parked research alternative to the ON HOLD OpenCore effort. Stela v0.3.1 may
-be worth a read-only compatibility preflight on Ryzen 7 5800H / RTX 3060 Laptop.
+Parked research alternative to the ON HOLD OpenCore effort. The latest
+available Stela release may be worth a read-only compatibility preflight on
+Ryzen 7 5800H / RTX 3060 Laptop.
 The former `TAHOE_OC` SanDisk USB may be repurposed **only** after verifying its
 identity, preserving any needed data and separately authorizing its erasure.
 Keep the Fedora installation and internal disks untouched; do not treat
