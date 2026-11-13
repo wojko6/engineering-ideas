@@ -1,6 +1,6 @@
 # Graphite UI Design Audit — Unslop-inspired evaluation
 
-**Status (2026-11-13):** Concept / proposed isolated evaluation. No Unslop installation, agent integration, automatic refactoring or local GUI acceptance is claimed by this document.
+**Status (2026-11-13):** Concept / first read-only audit completed on a **historical v1.9 QSS** and an isolated, independent HTML fixture; see [Phase 0 evidence](PHASE-0-2026-11-13.md). Current Charcoal v0.4 QSS and native Qt GUI have **not** been revalidated. No Unslop installation, agent integration, automatic refactoring or production changes occurred.
 
 ## Why this exists
 
