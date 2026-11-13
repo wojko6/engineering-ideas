@@ -205,9 +205,7 @@ validation.
 
 [Expanded concept](ideas/reproducible-kde-wayland-session/README.md)
 
-The concept remains optional here, while active planning and acceptance for
-GNOME + KDE coexistence are tracked by Fedora roadmap Issue #12. Do not maintain
-a second execution checklist in this incubator.
+A physical Fedora 45/KDE pilot exists, while **clean-room restore acceptance remains HOLD**. A separate Fedora 45 KDE Graphite design branch now covers the reviewed inventory and future disposable VM test under Fedora roadmap Issue #12. Do not maintain a second execution checklist in this incubator.
 
 ### Universal Tabs for GNOME
 
@@ -227,6 +225,12 @@ NetAlertX are secondary monitoring/UI candidates. Compare against existing KDE,
 launcher, packaging and monitoring capabilities before selecting at most one or
 two non-invasive experiments. No installation or system changes are authorized
 by this backlog entry.
+
+### Graphite UI Design Audit — Unslop-inspired evaluation
+
+[Expanded concept](ideas/graphite-ui-design-audit/README.md)
+
+**Concept / proposed isolated test; not a production install.** Review the upstream Unslop AI skill, test its audit methodology on a disposable HTML fixture, and separately assess applicability to Qt6/QSS Finder Graphite and KDE. No agent-driven edit of the system Dolphin or working desktop is authorized. Keep the Graphite runtime/build/restore source of truth in `fedora-workstation-setup`.
 
 ## Router ideas already tracked in the active ASUS project
 
