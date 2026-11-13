@@ -74,7 +74,7 @@ all remaining concepts in parallel.
 | [GeForce NOW Packet-Loss Correlation Lab](ideas/gfn-packet-loss-correlation-lab/README.md) | Concept / diagnostic lab | Synchronized client/router captures to localize intermittent real-time loss. |
 | [RouterCloud Metro UI](ideas/routercloud-metro-ui/README.md) | Design concept / initial Web and Android features implemented | Tile-based RouterCloud Web and Android design inspired by Windows 8 / Windows Phone, while preserving the existing backend security boundary. |
 
-**Dated scope (2026-11-04):** RouterCloud Web and the [Android implementation](https://github.com/wojko6/routercloud-android) now contain Metro-inspired UI elements, favorites and synchronization features, but this incubator retains the *future shared design system* concept. Similarly, [Fedora KDE](https://github.com/wojko6/fedora-workstation-setup) runs in a physical pilot and is not yet a reproducible accepted GNOME replacement.
+**Status update (2026-11-13):** RouterCloud Web and [Android](https://github.com/wojko6/routercloud-android) have implemented selected Metro features; a shared design system is still a concept. The physical [Fedora workstation](https://github.com/wojko6/fedora-workstation-setup) has been upgraded to **Fedora 45 / KDE Plasma 6.8.2 / Wayland**, but the last fully accepted reproducible restore baseline remains historical **Fedora 44 / GNOME 50.5**. An opt-in [Fedora 45 KDE Graphite restore-design branch](https://github.com/wojko6/fedora-workstation-setup/tree/feature/fedora45-kde-graphite-restore) contains read-only inventories and a proposed disposable VM verification plan; no KDE clean-room restore or custom ISO has been accepted.
 
 ## Android, privacy and telemetry
 
@@ -103,6 +103,7 @@ all remaining concepts in parallel.
 | [Stela Apple Silicon-on-x86 Compatibility Lab — Lenovo Legion 5](ideas/stela-apple-silicon-on-legion-lab/README.md) | Concept / parked | Evaluate current Stela compatibility on Ryzen 7 5800H + RTX 3060 Laptop using a verified, disposable USB; OpenCore stays ON HOLD, no installation or disk writes approved. |
 | [Universal Tabs for GNOME](ideas/gnome-universal-tabs/README.md) | Concept / architecture | System-wide window grouping and tabbed workspace model for GNOME, with later deep application adapters. |
 | [Fedora Application Discovery and Controlled Evaluation](ideas/fedora-application-discovery-evaluation/README.md) | Concept / parked | Curated AlternativeTo candidate shortlist for KDE desktop workflows, AppImage/Flatpak tooling, monitoring and gaming; read-only screening before optional isolated trials. |
+| [Graphite UI Design Audit — Unslop-inspired evaluation](ideas/graphite-ui-design-audit/README.md) | Concept / isolated test proposed | Review an AI-agent design-audit method on a disposable web fixture, then evaluate which findings transfer to Qt6/QSS; no live KDE changes. |
 
 See [BACKLOG.md](BACKLOG.md) for the prioritized queue and additional remembered
 ideas that have not yet been expanded.
