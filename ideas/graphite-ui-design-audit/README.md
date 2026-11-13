@@ -2,6 +2,8 @@
 
 **Status (2026-11-13):** Concept / first read-only audit completed on a **historical v1.9 QSS** and an isolated, independent HTML fixture; see [Phase 0 evidence](PHASE-0-2026-11-13.md). Current Charcoal v0.4 QSS and native Qt GUI have **not** been revalidated. No Unslop installation, agent integration, automatic refactoring or production changes occurred.
 
+**Current decision:** Matte Graphite v0.5 A was accepted as the visual direction from operator screenshots on 2026-11-13. See [Phase 1 acceptance checklist](PHASE-1-2026-11-13.md). This is **not** production/restore promotion; the active launcher and original Finder are untouched.
+
 ## Why this exists
 
 The active [Fedora workstation project](https://github.com/wojko6/fedora-workstation-setup) has a Fedora 45 / KDE Plasma / Wayland desktop pilot, a separately developed Finder KDE LAB application and an **unpromoted** Graphite Charcoal visual candidate. The local Finder screenshots revealed inconsistent surfaces and a still-violet navigation sidebar. A one-off theme patch is not sufficient to maintain consistent visual rules across Finder, KDE properties, dock/launcher integrations and dashboards.
