@@ -1,6 +1,6 @@
 # Fedora Upgrade Readiness Engine
 
-**Status (2026-11-04):** future reusable automation concept. Manual Fedora 45/NVIDIA 620 preflight B1–B8 exists in [Fedora workstation documentation](https://github.com/wojko6/fedora-workstation-setup/blob/main/docs/upgrade-preflights/2026-11-04-fedora45-nvidia620.md), but full B9 and an actual upgrade were not performed.
+**Status (2026-11-13):** future reusable automation concept, not an existing tool. The [manual Fedora 45 / NVIDIA 620 preflight B1–B8 record](https://github.com/wojko6/fedora-workstation-setup/blob/main/docs/upgrade-preflights/2026-11-04-fedora45-nvidia620.md) documents a **historical** checkpoint at which B9 and the actual upgrade had not been performed. The [Fedora workstation project status](https://github.com/wojko6/fedora-workstation-setup/blob/main/PROJECT-STATUS.md) separately confirms a **physical Fedora 44 → 45 upgrade on 2026-11-10** with bounded operational acceptance. A full Fedora 45/KDE clean-room restore and desired-state promotion remain **HOLD**; successful host upgrade does not retrospectively complete B9 or validate a reusable automation engine.
 
 ## Goal
 
@@ -32,7 +32,7 @@ without hiding operator decisions.
 ## Intended checks
 
 - package/repository compatibility;
-- GNOME Shell extension compatibility;
+- KDE Plasma/Wayland session and Qt/KF6 integration, plus GNOME extensions only where a GNOME profile is actually targeted;
 - custom localization overlays and version pins;
 - Flatpak state;
 - kernel/modules and third-party drivers;
