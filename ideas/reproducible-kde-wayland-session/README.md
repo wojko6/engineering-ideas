@@ -1,11 +1,10 @@
 # Reproducible KDE Wayland Session
 
-**Status (2026-11-04):** physical Fedora 44/KDE Plasma 6.8.2 pilot exists; reproducible coexistence, clean-room restore and accepted baseline promotion remain open in the Fedora repository.
+**Status (2026-11-13):** the physical workstation runs **Fedora 45 / KDE Plasma 6.8.2 / Wayland** (upgrade reported 2026-11-10). The most recently fully accepted reproducible restore baseline is **historical Fedora 44 / GNOME 50.5**. A separate [Fedora 45 KDE Graphite design branch](https://github.com/wojko6/fedora-workstation-setup/tree/feature/fedora45-kde-graphite-restore) contains operator-confirmed read-only host inventories, observed RPM versions, and a planned VirtualBox clean-room test. **No Fedora 45 KDE clean-room restore, independent KDE installer, or ISO is accepted.**
 
 ## Goal
 
-Add an optional KDE Plasma Wayland session to the Fedora workstation without
-turning KDE into the canonical desktop or damaging the existing GNOME state.
+Document how the already-running KDE Plasma Wayland workstation can become a reproducible, optional and verified Fedora profile while preserving the historical GNOME restore baseline. The existing KDE pilot is not automatically an accepted restore configuration.
 
 ## Scope boundary
 
@@ -28,9 +27,9 @@ the accepted workstation state.
 ## Intended workflow
 
 - preflight package/session dependencies;
-- install KDE in a controlled way;
+- reproduce KDE in a disposable Fedora 45 VM with reviewed manifests;
 - validate portals, keyring, defaults, autostart and networking;
-- test GNOME -> KDE -> GNOME transitions;
+- keep GNOME/KDE coexistence or transition requirements explicit rather than assuming both remain installed;
 - keep session-specific settings separated;
 - verify that GNOME desired state remains intact.
 
@@ -41,5 +40,4 @@ reproducibly without creating uncontrolled cross-session drift.
 
 ## Promotion criterion
 
-Promote after repeated GNOME/KDE session switching works with explicit
-verification and rollback.
+Promote only after a repeated clean-room Fedora 45/KDE restore and the relevant session, portal, integration and rollback tests pass. GNOME coexistence/switching tests apply if that remains an explicitly selected target.
