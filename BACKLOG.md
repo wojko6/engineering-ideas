@@ -232,6 +232,17 @@ by this backlog entry.
 
 **Concept / proposed isolated test; not a production install.** Review the upstream Unslop AI skill, test its audit methodology on a disposable HTML fixture, and separately assess applicability to Qt6/QSS Finder Graphite and KDE. No agent-driven edit of the system Dolphin or working desktop is authorized. Keep the Graphite runtime/build/restore source of truth in `fedora-workstation-setup`.
 
+### Raven Windows Compatibility Runtime — Fedora Evaluation
+
+[Expanded concept](ideas/raven-windows-compatibility-lab/README.md)
+
+**Concept / parked; read-only upstream watch.** Monitor the experimental Raven
+Windows runtime and its application matrix, releases, security model and
+build reproducibility. Compare it with Wine/Bottles/Proton only if a later,
+separately approved disposable Fedora test has a concrete target application.
+No host installation, dependency changes or production prefix migration are
+authorized by this entry.
+
 ## Router ideas already tracked in the active ASUS project
 
 The following remain useful, but their operational source of truth is the active
