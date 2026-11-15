@@ -104,6 +104,7 @@ all remaining concepts in parallel.
 | [Universal Tabs for GNOME](ideas/gnome-universal-tabs/README.md) | Concept / architecture | System-wide window grouping and tabbed workspace model for GNOME, with later deep application adapters. |
 | [Fedora Application Discovery and Controlled Evaluation](ideas/fedora-application-discovery-evaluation/README.md) | Concept / parked | Curated AlternativeTo candidate shortlist for KDE desktop workflows, AppImage/Flatpak tooling, monitoring and gaming; read-only screening before optional isolated trials. |
 | [Graphite UI Design Audit — Unslop-inspired evaluation](ideas/graphite-ui-design-audit/README.md) | Concept / isolated test proposed | Review an AI-agent design-audit method on a disposable web fixture, then evaluate which findings transfer to Qt6/QSS; no live KDE changes. |
+| [Raven Windows Compatibility Runtime — Fedora Evaluation](ideas/raven-windows-compatibility-lab/README.md) | Concept / parked — upstream watch | Research an experimental alternative Windows runtime; compare against Wine/Bottles/Proton only in a future authorized disposable test, with no Fedora changes now. |
 
 See [BACKLOG.md](BACKLOG.md) for the prioritized queue and additional remembered
 ideas that have not yet been expanded.
