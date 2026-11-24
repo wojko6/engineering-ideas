@@ -7,6 +7,52 @@ The list is intentionally larger than the active work queue. The operating rule
 is to keep at most one or two implementation-heavy projects active at the same
 time.
 
+## 2026-11-24 review — proposed prioritization, not activation
+
+Keep the existing one-or-two-heavy-project limit. Prefer completing existing
+implementation work before opening new projects. The following is a review
+proposal, not a replacement for the queue or permission to deploy.
+
+- **Graphite / reproducible Fedora KDE:** prioritize a shared design language,
+  toolkit-specific adapters, exact-version validation and a clean-room restore.
+  Preserve the historical GNOME profile. The Fedora implementation repository
+  and its [#12](https://github.com/wojko6/fedora-workstation-setup/issues/12),
+  [#13](https://github.com/wojko6/fedora-workstation-setup/issues/13),
+  [#50](https://github.com/wojko6/fedora-workstation-setup/issues/50) own the
+  execution work. The design-audit concept supplies a method, not a second
+  implementation.
+- **Workstation management:** consider a shared modular architecture for System
+  Drift Detector, Upgrade Readiness, Btrfs Safe Change & Rollback, DR Drill
+  Automation, Localization Audit and Health Dashboard. Start with read-only
+  drift classification; reuse evidence and avoid duplicate sources of truth.
+  Recovery and mutation automation remain gated by independently validated
+  manual procedures. Localization stays need-driven; dashboard is a consumer
+  of existing checks. No new implementation repository is proposed.
+- **ASUS Edge:** retain Policy Model v3 and isolated packet-level tests as a
+  bounded MVP; do not expand the production router or lift any HOLD. Black Box
+  belongs to the existing [HCC/Black Box work](https://github.com/wojko6/Advanced-ASUS-Edge-Gateway-ZTNA-Infrastructure/issues/304);
+  RouterCloud Android sync integrity belongs to its existing tracker.
+- **Candidate first repository-only coding task:** Fedora
+  [#31](https://github.com/wojko6/fedora-workstation-setup/issues/31)
+  (installer preflight/check mode), with isolated tests and review before
+  merge. Other candidate tasks are Fedora #29/#30/#33, ASUS #254/#284/#327
+  and Android #7–9, respecting existing prerequisites and gates.
+- **Parked / event-driven:** Universal Tabs for GNOME is a candidate for
+  retirement because KDE is now the reference desktop; no retirement decision
+  yet. Tailscale Android DNS, GFN loss, telemetry and ad-blocking labs remain
+  deferred until a concrete need. Raven and Stela/stambha remain research
+  watches; no boot, installation or device modification authorized. LAN/Wi-Fi
+  retains the deferred Fedora Live HE160 comparison.
+- **Confirmed cancellation:** the separate custom office-suite fork proposal
+  [Fedora #49](https://github.com/wojko6/fedora-workstation-setup/issues/49)
+  was closed as NOT PLANNED. Prefer evaluating existing upstream applications
+  rather than committing to a downstream fork. No PoC or package replacement.
+
+Any agent-assisted implementation must produce portable source, tests and
+documentation, use isolated environments and separate reviewable changes,
+and not depend on continuing access to a particular hosted agent service.
+No new tasks or deployments are authorized by this review.
+
 ## Now / finish before opening more work
 
 ### 1. LAN / Wi-Fi Performance & Latency Benchmark Lab

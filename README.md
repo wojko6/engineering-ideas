@@ -35,6 +35,8 @@ promotion into an implementation repository
 Keep at most **one or two implementation-heavy projects active at the same
 time**. New ideas can be captured here without becoming immediate work.
 
+**2026-11-24 backlog review:** see the [proposed prioritization](BACKLOG.md#2026-11-24-review--proposed-prioritization-not-activation). Graphite/KDE and a shared workstation-management architecture are candidate directions; existing operational owners, acceptance criteria and HOLD gates remain unchanged. Fedora office-suite fork #49 is closed NOT PLANNED.
+
 ## Suggested execution path
 
 The current preferred sequence is:
