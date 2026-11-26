@@ -7,6 +7,8 @@ The list is intentionally larger than the active work queue. The operating rule
 is to keep at most one or two implementation-heavy projects active at the same
 time.
 
+**2026-11-26 source-only reconciliation:** Fedora installer preflight [#31](https://github.com/wojko6/fedora-workstation-setup/issues/31) is no longer just a candidate coding task: [Draft PR #70](https://github.com/wojko6/fedora-workstation-setup/pull/70) exists, remains unmerged, and its exact HEAD `3340d9fd` has a [successful static CI run](https://github.com/wojko6/fedora-workstation-setup/actions/runs/45628171780). This is isolated implementation evidence, not physical restore acceptance. Graphite/KDE stays within the Fedora implementation repository; no duplicate implementation project or change to Fedora 45/KDE restore HOLD. Offline macOS/XNU research [Draft PR #7](https://github.com/wojko6/engineering-ideas/pull/7) remains parked, unmerged, with no boot or deployment approval. Earlier Nov 24 prioritization below remains historical; the one-or-two-heavy-project rule still applies.
+
 ## 2026-11-24 review — proposed prioritization, not activation
 
 Keep the existing one-or-two-heavy-project limit. Prefer completing existing
